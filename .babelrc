@@ -1,0 +1,7 @@
+{
+    "presets": [
+      "env"
+    ],
+    "retainLines": true,
+    "plugins": ["transform-object-rest-spread"]
+  }
