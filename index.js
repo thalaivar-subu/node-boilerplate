@@ -1,24 +1,19 @@
+// eslint-disable-next-line no-unused-vars
+import logEventErrors from "./error-handler/event-errors";
 import logger from "./logger/logger";
-import { get } from "axios";
+import express from "express";
+import { PORT } from "./constants/constants";
+import appMiddleware from "./middleware/middleware";
+// Starting Express Server
+const app = express();
 
-logger.info("Application has started Successfully");
+appMiddleware(app);
 
-get("https://searchconsole.googleapis.com/$discovery/rest?version=v1").then(
-  (response) => {
-    logger.info("Making Sample Get Call -> ", Object.keys(response));
-  }
-);
+const server = app.listen(PORT, () => {
+  const { address, port } = server.address();
+  logger.info(`Server Listening at ${address} on port ${port}`);
+});
 
-process
-  .on("unhandledRejection", (reason, promise) => {
-    console.error("Unhandle rejection in promise:: ", { reason, promise });
-    logger.error("Unhandle rejection in promise:: ", { reason, promise });
-  })
-  .on("uncaughtException", (err, origin) => {
-    console.error("Uncaught Exception thrown ", { err, origin });
-    logger.error("Uncaught Exception thrown ", { err, origin });
-  })
-  .on("exit", (code) => {
-    console.error(`About to exit with code ${code}`);
-    logger.error("About to exit with code $", { code });
-  });
+app.get("/", (req, res) => {
+  res.send("Hi!!!");
+});

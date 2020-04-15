@@ -5,5 +5,13 @@ const NODE_ENV = process.NODE_ENV || "development";
 const LOGPATH = process.LOGPATH || `${APP_DIRECTORY}`;
 const ERROR_FILENAME = `${LOGPATH}/error.log`;
 const INFO_FILENAME = `${LOGPATH}/info.log`;
+const PORT = 3000;
 
-export { NODE_ENV, LOGPATH, ERROR_FILENAME, INFO_FILENAME, APP_DIRECTORY };
+export {
+  NODE_ENV,
+  LOGPATH,
+  ERROR_FILENAME,
+  INFO_FILENAME,
+  APP_DIRECTORY,
+  PORT
+};
