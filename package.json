@@ -6,8 +6,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node babel.js",
-    "start-dev": "nodemon babel.js --execute babel-node"
+    "start": "node babel.js"
   },
   "repository": {
     "type": "git",
@@ -24,12 +23,9 @@
   },
   "homepage": "https://github.com/thalaivar-subu/node-boilerplate#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
     "eslint": "^6.8.0",
     "nodemon": "^2.0.3",
     "npm-check": "^5.9.2",
