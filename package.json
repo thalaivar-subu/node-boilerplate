@@ -24,6 +24,7 @@
   "homepage": "https://github.com/thalaivar-subu/node-boilerplate#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/register": "^7.9.0",
     "eslint": "^6.8.0",
