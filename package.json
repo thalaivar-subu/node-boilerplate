@@ -1,45 +1,40 @@
 {
-  "name": "boilerplate",
+  "name": "intranet",
   "version": "1.0.0",
-  "description": "Basic Node Boiler Plate",
-  "main": "babel.js",
-  "private": true,
+  "description": "API using Graph Data Structure",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node babel.js"
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thalaivar-subu/node-boilerplate.git"
+    "url": "git+https://github.com/thalaivar-subu/intranet.git"
   },
-  "keywords": [
-    "node",
-    "boilerplate"
-  ],
-  "author": "thalaivar-subu",
-  "license": "MIT",
+  "author": "Subramanian.VE",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thalaivar-subu/node-boilerplate/issues"
+    "url": "https://github.com/thalaivar-subu/intranet/issues"
   },
-  "homepage": "https://github.com/thalaivar-subu/node-boilerplate#readme",
+  "homepage": "https://github.com/thalaivar-subu/intranet#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@babel/register": "^7.9.0",
-    "eslint": "^6.8.0",
-    "nodemon": "^2.0.3",
-    "npm-check": "^5.9.2",
-    "pre-commit": "^1.2.2",
-    "prettier": "^2.0.4"
+    "@babel/core": "7.12.7",
+    "@babel/plugin-transform-runtime": "7.12.1",
+    "@babel/preset-env": "7.12.7",
+    "@babel/register": "7.12.1",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-module-resolver": "4.0.0",
+    "eslint": "7.14.0",
+    "nodemon": "2.0.6",
+    "prettier": "2.2.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1",
-    "express-http-context": "^1.2.3",
-    "fast-safe-stringify": "^2.0.7",
-    "morgan": "^1.10.0",
-    "uniqid": "^5.2.0",
-    "winston": "^3.2.1"
+    "express": "4.17.1",
+    "express-http-context": "1.2.4",
+    "fast-safe-stringify": "2.0.7",
+    "morgan": "1.10.0",
+    "uniqid": "5.2.0",
+    "winston": "3.3.3"
   }
 }
