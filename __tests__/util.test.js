@@ -1,4 +1,4 @@
-import { TEST_URL } from "../lib/constants";
+import { TEST_URL } from "../app/lib/constants";
 import { get } from "axios";
 
 describe("Utils Test Cases", () => {

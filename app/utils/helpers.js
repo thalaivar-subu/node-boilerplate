@@ -1,3 +1,5 @@
+import safeStringify from "fast-safe-stringify";
+
 // Parses JSON -> in case of error returns empty object
 export const parseJson = (v) => {
   try {
@@ -31,3 +33,6 @@ export const deepFreeze = (object) => {
   }
   return Object.freeze(object);
 };
+
+// Object.clone -> clones shallow level -> So deepCloning for nested Levels
+export const deepClone = (v) => parseJson(safeStringify(v));
