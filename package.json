@@ -1,5 +1,5 @@
 {
-  "name": "intranet",
+  "name": "node-boilerplate",
   "version": "1.0.0",
   "description": "API using Graph Data Structure",
   "main": "index.js",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thalaivar-subu/intranet.git"
+    "url": "git+https://github.com/thalaivar-subu/node-boilerplate.git"
   },
   "author": "Subramanian.VE",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thalaivar-subu/intranet/issues"
+    "url": "https://github.com/thalaivar-subu/node-boilerplate/issues"
   },
-  "homepage": "https://github.com/thalaivar-subu/intranet#readme",
+  "homepage": "https://github.com/thalaivar-subu/node-boilerplate#readme",
   "devDependencies": {
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.7",
